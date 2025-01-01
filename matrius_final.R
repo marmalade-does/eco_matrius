@@ -30,7 +30,7 @@ cdb_check_species(comadre_db, "Ursus americanus")  # Black bear species
 ursus_db <- cdb_check_species(comadre_db, "Ursus americanus", return_db = TRUE)
 
 # Explore the database content -------------------------------------------
-# View the entire database object (may not be practical for large datasets)
+# View the entire database object 
 View(ursus_db)
 
 # View the data slot for a clearer representation
