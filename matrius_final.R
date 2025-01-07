@@ -133,6 +133,10 @@ dades_finals_249887 <- process_population_data(projeccio_poblacio_249887)
 
 
 # Define a function to plot data
+# NOTE: THIS GRAPH IS FILTERED TO NOT IINCLUDE THE WHOLE PROJECTION. THIS WAS A DECISION \
+# SO THAT THE SLOPES OF THE GRAPHS (RATE OF DECREASE) WAS MORE PROMINENT
+# F YOU WANT TO GRAPH THE FULL PROJECTON COMMENT OUT THE LINE THAT SAYS "filter(Any <= 2020) %>%" 
+
 create_population_plot <- function(data, id, title_suffix) {
   plot <- data %>%
     filter(Any <= 2020) %>%
